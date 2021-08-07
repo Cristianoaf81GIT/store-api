@@ -1,0 +1,4 @@
+DELETE http://localhost:3000/products/561fedb5-dce7-453a-9ff3-adc0529cf6d2 HTTP/1.1
+Host: localhost:3000
+
+

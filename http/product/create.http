@@ -1,7 +1,7 @@
 POST http://localhost:3000/products HTTP/1.1
 Host: localhost:3000
-Content-Length: 269
 Content-Type: application/json
+Content-Length: 269
 
 {
  "name": "tv 32",

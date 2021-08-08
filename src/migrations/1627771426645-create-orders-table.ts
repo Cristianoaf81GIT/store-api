@@ -12,8 +12,8 @@ export class createOrdersTable1627771426645 implements MigrationInterface {
                 { name: 'credit_card_number', type: 'varchar' },
                 { name: 'credit_card_name', type: 'varchar' },
                 { name: 'credit_card_cvv', type: 'varchar' },
-                { name: 'credit_card_expiration_month', type: 'varchar' },
-                { name: 'credit_card_expiration_year', type: 'varchar' },
+                { name: 'credit_card_expiration_month', type: 'int' },
+                { name: 'credit_card_expiration_year', type: 'int' },
                 { name: 'create_at', type: 'timestamp', default: 'CURRENT_TIMESTAMP'}
             ]
         }));

@@ -1,5 +1,6 @@
 import { BeforeInsert, Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 import { v4 as uuidv4 } from 'uuid';
+import { CreditCard } from "./credit-card.embbeded";
 import { OrderItem } from "./order-item.entity";
 
 export enum OrderStatus {
@@ -25,7 +26,9 @@ export class Order {
 
     @Column()
     status: OrderStatus = OrderStatus.Pending;
-
+    
+    @Column(() => CreditCard, { prefix: '' })
+    credit_card: CreditCard;    
 
     @BeforeInsert()
     beforeInsertActions() {

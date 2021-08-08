@@ -1,5 +1,12 @@
 import { Product } from "src/products/entities/product.entity";
-import { BeforeInsert, Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
+import { 
+        BeforeInsert,
+        Column,
+        Entity,
+        JoinColumn,
+        ManyToOne,
+        PrimaryGeneratedColumn 
+} from "typeorm";
 import { v4 as uuidv4 } from 'uuid';
 import { Order } from "./order.entity";
 
